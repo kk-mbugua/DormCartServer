@@ -5,7 +5,7 @@ const phone_model = require("./phone_model")
 const address_model = require("./address_model")
 
 "use strict"
-var OrderSchema = new Schema({
+const OrderSchema = new Schema({
   _someId: Schema.Types.ObjectId,
   full_name: {
     type: String,
@@ -36,6 +36,11 @@ var OrderSchema = new Schema({
     required: true,
     default: false,
   },
+  completed: {
+    type:Boolean,
+    required: true,
+    default: false
+  }
 });
 
 // Compile model from schema

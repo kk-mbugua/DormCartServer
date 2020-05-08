@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var PhoneSchema = new Schema({
+const PhoneSchema = new Schema({
     country_code: {
         type: String,
         required: true,
