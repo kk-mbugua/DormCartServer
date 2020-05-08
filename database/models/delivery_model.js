@@ -12,7 +12,8 @@ const DeliverySchema = new Schema({
         required: true
     },
     assigned_by:{
-        type: Schema.Types.ObjectId
+        type: Schema.Types.ObjectId,
+        required: true
     },
     expected_pickup_date:{
         type: Schema.Types.Date,
